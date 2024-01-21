@@ -1,7 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 function Root() {
+  useEffect(() => {
+    document.title = 'Oliver Timko';
+  }, []);
   return (
     <div className="App">
       <nav>
